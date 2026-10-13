@@ -1,0 +1,15 @@
+[project]
+name = "crew-of-three"
+version = "0.1.0"
+description = "A release-notes crew (CrewAI, three agents, sequential) exporting OpenInference spans over OTLP/HTTP"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai==1.15.27",
+    "openinference-instrumentation-crewai==1.1.21",
+    "openinference-instrumentation-openai==0.1.65",
+    "opentelemetry-sdk==1.45.1",
+    "opentelemetry-exporter-otlp-proto-http==1.45.1",
+]
+
+[tool.uv]
+package = false
